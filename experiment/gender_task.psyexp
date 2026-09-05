@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2025.1.1">
+  <Settings>
+    <Param val="ptb" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="Thank you for your patience." valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001', 'age': '', 'gender': &quot;['Male', 'Female']&quot;, 'education_years': '', 'handedness': &quot;['Right', 'Left']&quot;}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1536, 960]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="float" valType="str" updates="None" name="clockFormat"/>
+    <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
+    <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
+    <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="gender_task" valType="str" updates="None" name="expName"/>
+    <Param val="" valType="str" updates="None" name="expVersion"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="info" valType="code" updates="None" name="logging level"/>
+    <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="neon.local" valType="str" updates="None" name="plCompanionAddress"/>
+    <Param val="8080" valType="num" updates="None" name="plCompanionPort"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="0" valType="code" updates="None" name="runMode"/>
+    <Param val="False" valType="bool" updates="None" name="rush"/>
+    <Param val="time" valType="str" updates="None" name="sortColumns"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <RoutineSettingsComponent name="trial" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="trial" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <ImageComponent name="image" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$ImageFile" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="image" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ImageComponent>
+      <TextComponent name="text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp" plugin="None">
+        <Param val="'f', 'm'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$CorrectAns" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <RoutineSettingsComponent name="Instructions" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="Instructions" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="text_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="False" valType="code" updates="constant" name="draggable"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="You are about to see a series of human faces on the screen. Your task is to decide the gender of the person, IGNORING the facial expression (angry, happy, or neutral).&amp;#10;&amp;#10;If the person you see is FEMALE, press the F key. If the person you see is MALE, press the M key.&amp;#10;&amp;#10;Please try to respond as quickly and accurately as possible. Press the spacebar to begin when you are ready." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="" valType="str" updates="None" name="deviceLabel"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_resp_2" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'ImageFile': 'stimuli/F15AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F15HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F15NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F16AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F16HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F16NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F17AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F17HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F17NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F18AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F18HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F18NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F19AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F19HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F19NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F20AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F20HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F20NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F21AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F21HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F21NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F22AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F22HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F22NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F23AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F23HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F23NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F24AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F24HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F24NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F25AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F25HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F25NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F26AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F26HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F26NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F27AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F27HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F27NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F29AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F29HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F29NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F30AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F30HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F30NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F31AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F31HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F31NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F32AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F32HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F32NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F33AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F33HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F33NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F34AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F34HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F34NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F35AN.jpg', 'Gender': 'Female', 'Emotion': 'Angry', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F35HA.jpg', 'Gender': 'Female', 'Emotion': 'Happy', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/F35NE.jpg', 'Gender': 'Female', 'Emotion': 'Neutral', 'CorrectAns': 'f'}, {'ImageFile': 'stimuli/M01AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M01HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M01NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M02AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M02HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M02NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M03AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M03HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M03NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M04AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M04HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M04NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M05AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M05HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M05NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M06AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M06HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M06NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M07AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M07HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M07NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M08AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M08HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M08NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M09AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M09HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M09NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M10AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M10HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M10NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M11AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M11HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M11NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M12AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M12HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M12NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M13AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M13HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M13NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M14AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M14HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M14NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M15AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M15HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M15NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M16AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M16HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M16NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M17AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M17HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M17NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M18AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M18HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M18NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M19AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M19HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M19NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M20AN.jpg', 'Gender': 'Male', 'Emotion': 'Angry', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M20HA.jpg', 'Gender': 'Male', 'Emotion': 'Happy', 'CorrectAns': 'm'}, {'ImageFile': 'stimuli/M20NE.jpg', 'Gender': 'Male', 'Emotion': 'Neutral', 'CorrectAns': 'm'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditions.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="42" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+  </Flow>
+</PsychoPy2experiment>

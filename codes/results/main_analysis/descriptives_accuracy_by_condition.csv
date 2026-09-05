@@ -1,0 +1,7 @@
+face_gender,Emotion,mean_accuracy,std_accuracy,n
+Female,Angry,0.84734815,0.05332652,18
+Female,Neutral,0.96099740,0.04226884,18
+Female,Happy,0.95929175,0.03782502,18
+Male,Angry,0.95324886,0.06733150,18
+Male,Neutral,0.88946795,0.07924719,18
+Male,Happy,0.95656270,0.05691370,18

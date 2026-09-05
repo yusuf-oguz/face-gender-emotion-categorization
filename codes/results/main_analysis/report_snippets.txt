@@ -1,0 +1,13 @@
+RT (mean_rt) için 2x3 RM-ANOVA sonuçları:
+- face_gender ana etkisi: F(1, 17) = 4.4372, p = 0.050326, ng2 = 0.0326
+- Emotion ana etkisi: F(2, 34) = 2.1387, p = 0.144905, ng2 = 0.0064
+  (GG epsilon = 0.8053, p değeri GG-düzeltilmiş olarak raporlanmıştır.)
+- face_gender × Emotion etkileşimi: F(2, 34) = 1.2454, p = 0.296588, ng2 = 0.0034
+  (GG epsilon = 0.8135, p değeri GG-düzeltilmiş olarak raporlanmıştır.)
+
+Accuracy (accuracy) için 2x3 RM-ANOVA sonuçları:
+- face_gender ana etkisi: F(1, 17) = 0.3639, p = 0.554288, ng2 = 0.0087
+- Emotion ana etkisi: F(2, 34) = 15.9532, p < 0.0001, ng2 = 0.1496
+  (GG epsilon = 0.8709, p değeri GG-düzeltilmiş olarak raporlanmıştır.)
+- face_gender × Emotion etkileşimi: F(2, 34) = 29.2125, p < 0.0001, ng2 = 0.2964
+  (GG epsilon = 0.9468, p değeri GG-düzeltilmiş olarak raporlanmıştır.)

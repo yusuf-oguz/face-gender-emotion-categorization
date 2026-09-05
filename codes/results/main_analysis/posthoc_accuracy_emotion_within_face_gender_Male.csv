@@ -1,0 +1,4 @@
+Contrast,A,B,Paired,Parametric,T,dof,alternative,p-unc,p-corr,p-adjust,BF10,hedges
+Emotion,Angry,Neutral,True,True,4.15141917,17.00000000,two-sided,0.00066816,0.00133633,holm,53.066,0.84812481
+Emotion,Angry,Happy,True,True,-0.17188592,17.00000000,two-sided,0.86555677,0.86555677,holm,0.246,-0.05197575
+Emotion,Neutral,Happy,True,True,-4.42958967,17.00000000,two-sided,0.00036713,0.00110139,holm,89.529,-0.95091460

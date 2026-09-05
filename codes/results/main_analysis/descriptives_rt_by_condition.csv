@@ -1,0 +1,7 @@
+face_gender,Emotion,mean_rt,std_rt,n
+Female,Angry,0.97086816,0.29108605,18
+Female,Neutral,0.94839430,0.30531929,18
+Female,Happy,0.90792884,0.27193675,18
+Male,Angry,0.84230951,0.20222401,18
+Male,Neutral,0.88409800,0.24380305,18
+Male,Happy,0.83441881,0.13989232,18

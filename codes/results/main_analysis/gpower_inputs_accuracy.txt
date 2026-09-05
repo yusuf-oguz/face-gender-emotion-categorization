@@ -1,0 +1,14 @@
+G*Power Parametreleri (Accuracy)
+Hedef etki: face_gender * Emotion
+Yaklaşık eta^2 (ng2): 0.29640173
+Cohen's f (yaklaşık): 0.64904975
+Corr among repeated measures (r): -0.05633942
+Nonsphericity correction (epsilon): 0.94683524
+Number of groups: 1
+Number of measurements: 6
+
+G*Power ayarı önerisi:
+- Test family: F tests
+- Statistical test: ANOVA: Repeated measures, within factors
+- Type: A priori (required N) veya Post hoc (achieved power)
+- Alpha: 0.05, Power: 0.80 (a priori için)

@@ -1,0 +1,7 @@
+DV,Etki,p_türü,p_değeri,Sonuç
+RT,face_gender,p-GG-corr,0.05032626,anlamlı değil
+RT,Emotion,p-GG-corr,0.14490517,anlamlı değil
+RT,face_gender * Emotion,p-GG-corr,0.29658766,anlamlı değil
+Accuracy,face_gender,p-GG-corr,0.55428820,anlamlı değil
+Accuracy,Emotion,p-GG-corr,0.00003889,anlamlı
+Accuracy,face_gender * Emotion,p-GG-corr,0.00000009,anlamlı

@@ -15,6 +15,8 @@ Team Axion tarafından yürütülen bir davranışsal deney: yüz uyaranlarında
 
 </details>
 
+---
+
 A behavioral experiment run by Team Axion, looking at how the emotion expressed on a face (happy, angry, neutral) affects reaction time and accuracy in a gender categorization task.
 
 ## Experiment design

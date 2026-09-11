@@ -43,6 +43,10 @@ Holm-corrected post-hoc comparisons showed the interaction isn't just "some emot
 - **Female faces:** angry expressions were significantly less accurate than both neutral (p = 1.4 x 10⁻⁵) and happy (p = 1.1 x 10⁻⁷); neutral and happy didn't differ.
 - **Male faces:** neutral expressions were significantly less accurate than both angry (p = 0.0013) and happy (p = 0.0011); angry and happy didn't differ.
 
+![Mean accuracy by emotion, separately for female and male face stimuli, showing the crossover interaction](codes/results/main_analysis/figures/figure_accuracy_means.png)
+
+The crossing lines are the interaction: female-face accuracy stays high through neutral and happy and drops sharply at angry, while male-face accuracy is lowest at neutral and recovers for angry and happy, the opposite pattern.
+
 **What this means:** the classic face-processing claim that identity judgments (here, gender) and expression processing are functionally independent held up for reaction time, but not for accuracy. Response speed wasn't reliably affected by emotion, yet which expression degrades gender-categorization accuracy depends on the face's own gender, a real, statistically robust dissociation between speed and accuracy in this task.
 
 Full RM-ANOVA tables and post-hoc output: `codes/results/main_analysis/`. Full writeup: `reports/report4_final_analysis.pdf`.

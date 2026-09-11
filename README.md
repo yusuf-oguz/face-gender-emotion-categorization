@@ -38,8 +38,8 @@ A behavioral experiment run by Team Axion, looking at how the emotion expressed 
 ## Folder structure
 
 ```
-gender_emotion_experiment/
-├── experiment/               PsychoPy experiment definition (gender_task.psyexp, conditions.xlsx)
+face-gender-emotion-categorization/
+├── experiment/               PsychoPy experiment definition and runner (gender_task.psyexp, gender_task_lastrun.py, conditions.xlsx)
 ├── codes/
 │   ├── data_preparation.ipynb
 │   ├── data_preproccessing.ipynb

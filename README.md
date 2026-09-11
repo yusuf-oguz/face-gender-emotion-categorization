@@ -1,39 +1,58 @@
-# Face Gender Categorization Under Emotional Expression
+# Data Cleaning and Statistical Analysis of a Face-Gender-Emotion Experiment
 
 <details>
 <summary>🇹🇷 Türkçe özet için tıklayın</summary>
 
-Team Axion tarafından yürütülen bir davranışsal deney: yüz uyaranlarında ifade edilen duygunun (mutlu/kızgın/nötr), cinsiyet kategorileştirme görevindeki tepki süresi ve doğruluğu nasıl etkilediğini inceliyor.
+Team Axion adlı takımla yürütülen bir davranışsal deneyin veri temizleme ve istatistiksel analiz kısmı. Takım deneyi tasarlayıp veriyi topladı; ham PsychoPy çıktısından nihai hipotez testlerine kadar **veri temizleme pipeline'ı ve tüm istatistiksel analiz bireysel katkım** (proje raporlarının resmi imza sayfasında "Data Analysis: Yusuf Oğuz" olarak geçiyor).
 
-**Deney tasarımı:** KDEF veri setinden, saç/kulak ipuçları kaldırılmış, iç yüz hatlarına odaklanan yüz fotoğrafları. Katılımcı, ifade edilen duyguyu görmezden gelip yüzün cinsiyetini mümkün olduğunca hızlı ve doğru belirtiyor. 2 (yüz cinsiyeti) × 3 (duygu) tasarım, katılımcı başına 120 deneme, sabit tohumla aynı pseudo-rastgele sıra. PsychoPy ile yazıldı. 20 katılımcıdan 2'si dışlanıp N=18'e (10 kadın, 8 erkek) inildi.
+**Veri temizleme:** 20 ham katılımcı dosyasından 2'si dışlandı (1 pilot/test koşusu, 1 katılımcı yaş kriterinin altında) → N=18. Deneme (trial) seviyesinde iki aşamalı temizlik: global RT kırpma (0.2-3.0 saniye dışı, 61 deneme/%2.82 çıkarıldı) ve katılımcı-içi z-skor aykırı değer temizliği (|z|>2.5, 72 deneme/%3.43 daha çıkarıldı), toplam %6.16'lık bir temizlik oranı, tamamen dokümante edilmiş kriterlerle.
 
-**Analiz:** veri hazırlama/ön işleme, Repeated Measures ANOVA (2×3, Greenhouse-Geisser düzeltmeli), post-hoc karşılaştırmalar, G*Power ile örneklem/etki büyüklüğü hesaplamaları.
+**Analiz:** 2×3 Repeated-Measures ANOVA (yüz cinsiyeti × duygu), Greenhouse-Geisser düzeltmesi, Holm-düzeltmeli post-hoc testler. **Asıl bulgu:** tepki süresinde anlamlı bir etki yok, ama doğrulukta hem duygunun ana etkisi (p≈0.00004) hem de yüz cinsiyeti × duygu etkileşimi çok güçlü anlamlı (p≈0.00000009). Bu etkileşimin yönü yüz cinsiyetine göre tersine dönüyor: kadın yüzlerinde "kızgın" ifade doğruluğu düşürürken, erkek yüzlerinde "nötr" ifade düşürüyor.
 
-**Bulgu:** duygu ifadesinin doğruluk üzerinde anlamlı bir ana etkisi ve yüz cinsiyetiyle anlamlı bir etkileşimi var (p < 0.0001); tepki süresinde yüz cinsiyeti etkisi sınırda anlamlı (p ≈ 0.05).
+**Deney bağlamı (kısaca):** KDEF veri setinden, saç/kulak ipuçları kaldırılmış yüz fotoğrafları; katılımcı ifadeyi görmezden gelip yüzün cinsiyetini olabildiğince hızlı/doğru belirtiyor. 2×3 tasarım, katılımcı başına 120 deneme.
 
-**Gizlilik notu:** bu depo, orijinal ham veri setinin anonimleştirilmiş bir kopyasıdır. Katılımcı isimleri katılımcı kodlarıyla (P01-P20) değiştirildi, ekip üyelerinin yazarlık bilgisi (bu kişisel veri değil, akademik atıf) olduğu gibi korundu. KDEF uyaran görselleri kendi lisans koşulları nedeniyle depoya dahil edilmedi.
+**Gizlilik notu:** bu depo anonimleştirilmiş bir kopya. Katılımcı isimleri P01-P20 koduna çevrildi, KDEF uyaran görselleri kendi lisansı nedeniyle depoda yok.
 
 </details>
 
 ---
 
-A behavioral experiment run by Team Axion, looking at how the emotion expressed on a face (happy, angry, neutral) affects reaction time and accuracy in a gender categorization task.
+A team behavioral-psychology project (Team Axion), where my individual contribution was the data cleaning pipeline and the full statistical analysis, from the raw per-participant PsychoPy exports through to the final hypothesis tests. The project's own report signatures record this split: the team designed the study and collected the data, while data analysis (Report 4) is credited to me alone.
 
-## Experiment design
+## Data cleaning pipeline
 
-- **Stimuli:** faces from the KDEF (Karolinska Directed Emotional Faces) dataset, cropped to an oval or rectangle to isolate the inner facial features and remove hair and ear cues.
+- **Sample:** 20 raw participant files collected, 2 excluded before analysis (one pilot/test run, one participant below the minimum age criterion), leaving **N = 18** (10 female, 8 male).
+- **Trial-level cleaning**, applied in two stages on the merged trial dataset:
+  1. Global RT trimming (0.2-3.0 seconds): removed 61 trials (2.82%), leaving 2,099.
+  2. Within-subject outlier removal (z-score within each participant x face-gender x emotion cell, \|z\| > 2.5): removed 72 more trials (3.43%), leaving 2,027.
+  3. Combined, 6.16% of all trials were excluded, on documented, pre-specified criteria.
+- **Aggregation:** trial-level data was collapsed into one row per participant x face-gender x emotion cell (2 x 3 = 6 cells), producing a 108-row (18 x 6) subject-level summary table used for every statistical test.
+- **A design decision worth noting:** handedness was recorded (16 right-handed, 2 left-handed) but deliberately excluded as an analysis factor, since that split was too imbalanced to test meaningfully.
+
+## Statistical analysis and results
+
+A 2 (face gender: female/male) x 3 (emotion: angry/neutral/happy) repeated-measures ANOVA was run separately for reaction time and accuracy, with Greenhouse-Geisser correction for the emotion and interaction effects, and Holm-corrected post-hoc pairwise tests wherever the omnibus effect was significant.
+
+**Reaction time:** no significant effects. Face gender was borderline (F(1,17) = 4.437, p = 0.0503), emotion and the interaction were not significant. Descriptively, responses were somewhat slower for female-face stimuli, but the pattern didn't clear the significance threshold.
+
+**Accuracy:** this is where the real effect shows up.
+- Main effect of emotion: F(2,34) = 15.953, p = 3.9 x 10⁻⁵ (significant).
+- Face gender x emotion interaction: F(2,34) = 29.213, p = 9.0 x 10⁻⁸ (strongly significant).
+
+Holm-corrected post-hoc comparisons showed the interaction isn't just "some emotion is harder": which emotion hurts accuracy flips depending on the face's gender.
+- **Female faces:** angry expressions were significantly less accurate than both neutral (p = 1.4 x 10⁻⁵) and happy (p = 1.1 x 10⁻⁷); neutral and happy didn't differ.
+- **Male faces:** neutral expressions were significantly less accurate than both angry (p = 0.0013) and happy (p = 0.0011); angry and happy didn't differ.
+
+**What this means:** the classic face-processing claim that identity judgments (here, gender) and expression processing are functionally independent held up for reaction time, but not for accuracy. Response speed wasn't reliably affected by emotion, yet which expression degrades gender-categorization accuracy depends on the face's own gender, a real, statistically robust dissociation between speed and accuracy in this task.
+
+Full RM-ANOVA tables and post-hoc output: `codes/results/main_analysis/`. Full writeup: `reports/report4_final_analysis.pdf`.
+
+## Experiment context
+
+- **Stimuli:** faces from the KDEF (Karolinska Directed Emotional Faces) dataset, cropped to isolate the inner facial features and remove hair and ear cues.
 - **Task:** the participant ignores the expressed emotion and reports the face's gender as fast and accurately as possible (F for female, M for male).
-- **Design:** 2 (face gender: female/male) x 3 (emotion: happy/angry/neutral), 120 trials per participant, the same pseudo-random order for every participant via a fixed seed.
+- **Design:** 2 (face gender) x 3 (emotion), 120 trials per participant, the same pseudo-random trial order for every participant via a fixed seed.
 - **Tool:** PsychoPy (`experiment/gender_task.psyexp`).
-- **Sample:** 20 files collected, 2 excluded (one pilot recording, one participant below the age criterion), leaving N=18 (10 female, 8 male participants).
-
-## Analysis
-
-- Data preparation and preprocessing: outlier removal, accuracy and reaction time calculation.
-- A repeated measures ANOVA (the 2x3 design) for both accuracy and reaction time, with the Greenhouse-Geisser correction.
-- Post-hoc comparisons, plus sample size and effect size calculations with G*Power.
-
-**Summary of findings:** emotion had a significant main effect on accuracy, and a significant interaction with face gender (p < 0.0001). The effect of face gender on reaction time was borderline significant (p roughly 0.05). Full statistical output is under `codes/results/main_analysis/` and in `reports/`.
 
 ## Folder structure
 
@@ -57,4 +76,4 @@ This repository is an anonymized copy of the original raw dataset. Participant n
 
 ## Tools
 
-PsychoPy for the experiment, Python with Pandas and Pingouin/statsmodels for the RM-ANOVA, Matplotlib and Seaborn for the plots.
+Python: Pandas for the cleaning and aggregation pipeline, Pingouin and statsmodels for the RM-ANOVA and post-hoc tests, NumPy and SciPy for the underlying computations, Matplotlib and Seaborn for the diagnostic plots. PsychoPy for the original data collection.
